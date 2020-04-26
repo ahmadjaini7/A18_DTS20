@@ -1,0 +1,419 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+.main {
+    margin: auto 30px;
+}
+
+h1 {
+    text-align: center;
+    color: yellowgreen;
+    margin: 40px 0;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    color: yellowgreen;
+    margin: 40px 0;
+
+}
+
+h1:hover { 
+    font-weight: 800;
+}
+
+/*  CSS bagian Alida */
+
+    .header {
+        background-color:yellowgreen;
+        color: #ffffff;
+        height: 90px;
+    }
+
+    .header li {
+        list-style: none;
+        float: right;
+        padding: 40px 20px;
+        font-size: 16px;
+    }
+
+    .header li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .header li a:hover {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .header-logo {
+        float: left;
+        font-size: 28px;
+        padding: 40px 50px;
+        color: #ffffff;
+    }
+
+/* Akhir CSS bagian Alida */
+    
+  
+
+/* CSS bagian Jaini */
+/* Background-header */
+    .background-header {
+        background-image: linear-gradient(to right,aqua, rgb(26, 173, 231));
+        padding: 200px 50px;
+        color: white;
+        text-align: center;
+        font-size: 26px;
+        line-height: 130%;
+    }
+
+    .background-header a {
+        text-decoration: none;
+        color: white;
+        background-color: yellowgreen;
+        border-radius: 5px;
+        padding: 7px 20px;
+    }
+
+
+    
+
+/* OA */
+    .oa {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-gap: 15px;
+    }
+
+    .oa .online {
+        text-align: justify;
+    }
+
+    .oa .syarat {
+        background-color: yellowgreen;
+        border-radius: 15px;
+        padding: 15px;
+        color: white;
+    }
+
+/*  Section OA */
+    .section-oa {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-gap: 10px;
+    }
+
+    img {
+        width: 90%;
+        height: 80px;
+        border-radius: 10px;
+
+    }
+
+    .section-oa p {
+        background-color: yellowgreen;
+        border-radius: 10px;
+        padding: 5px;
+        color: white;
+    }
+
+    .section-oa p:hover {
+        font-weight: bold;
+    }
+
+/* Progate */
+    .all-progate {
+        display: grid;
+        grid-template-columns:60% 40%;
+        grid-gap: 15px;
+    }
+
+    .all-progate img {
+        width: 50%;
+        height: auto;
+        margin: auto;
+        display: block;
+    }
+
+    .all-progate .main-progate {
+        text-align: justify;
+    }
+
+    .all-progate .section-progate {
+        background-color: yellowgreen;
+        border-radius: 15px;
+        padding: 15px;
+        color: white;
+    }
+
+    span {
+        background-color: yellowgreen;
+        padding: 2px 5px;
+        color: white;
+        border-radius: 5px;
+    }
+   
+    .frame {
+       display: grid;
+       grid-template-columns: 50% 50%;
+       grid-gap: 10px;
+       
+    }
+
+    .frame-penjelasan {
+        text-align: justify;
+        background-color: yellowgreen;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 15px;
+    }
+
+
+    iframe {
+        width: 100%;
+        border-radius: 15px;
+    }
+/* Akhir CSS Bagian Jaini */
+
+/* CSS Bagian Ali */
+
+* {
+	box-sizing: border-box;
+	outline: none;
+}
+
+.clear {
+	clear: left;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.team-wrapper {
+    margin-top: 15px;
+	padding-bottom: 80px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-color: #ecf0f1;
+	text-align: center;
+}
+
+.heading {
+	padding-top: 80px;
+	padding-bottom: 50px;
+	color: #5f5d60;
+}
+
+/*animasi 2*/
+/*.teams .team {
+	transition: margin 1s ease,box-shadow 1s ease;
+}
+.teams .team:hover{
+	padding:20px;
+	box-shadow:0px 0px 20px #bdc3c7;
+}*/
+
+.team {
+	float: left;
+	width: 33%;
+	margin-bottom: 100px;
+}
+
+.team-icon {
+	position: relative;
+}
+
+.team-icon img{
+	width: 280px;
+	height: 280px;
+	filter: grayscale(0.2);
+	transition: all 0.5s;
+	object-fit: cover;
+}
+
+.team-icon img:hover{
+	filter: grayscale(1);
+	transform: scale(1.1);
+	border-radius: 50%;
+}
+
+.team-name {
+  padding: 10px 0;
+}
+
+.team-name h4{
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 800;
+	color: #2c3e50;
+	margin-top: 10px;
+}
+
+.team-name h6{
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: 15px;
+	color: #2c3e50;
+	font-size: 0.875rem;
+}
+
+.team-name p{
+	font-weight: 600;
+	margin-top: 5px;
+	color: #7f8c8d;
+	font-size: 0.75rem;
+
+}
+
+.team-name h5{
+	font-weight: 400;
+}
+
+.text-description {
+	width: 80%;
+	display: inline-block;
+	justify-content: center;
+	margin-top: 10px;
+	font-size: 0.875rem;
+	color: #2c3e50;
+}
+
+.social-media{
+	padding-top: 25px;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.social-media a{
+	color: #2c3e50;
+	display: inline-block;
+	width: 15%
+}
+
+.social-media a:hover{
+	color: #000;
+	transition: all 0.5s;
+}
+
+.social-media .fab{
+	font-size: 1.85rem;
+}
+
+/* Akhir CSS Bagian Ali */
+
+/* Bagian WRDN */
+
+
+footer {
+    background-color:yellowgreen;
+    padding:15px 20px;
+    margin-top: 20px;
+    
+  }
+  
+  .footer-logo {
+    font-size: 20px;
+    text-align:  center;
+    color:#fff;
+  }
+  
+  
+  
+  .footer h1{
+    font-size:13px;
+    text-align: center;
+    color:#fff;
+    margin-bottom: 8px;
+    
+    
+  }
+  
+  .footer h2{
+    font-size:9px;
+    text-align: left;
+    color:#000000;
+    margin: 0 0 -15px 0;
+  }
+
+/* Akhir Bagian WRDN */
+
+/* Responsive HP 670 px */
+@media screen and (max-width:700px) {
+    .main {
+        margin: auto 15px;
+    }
+    
+    .oa {
+       display: inline;
+    }
+
+    .section-oa {
+        display: inline;
+    }
+
+    .all-progate {
+        display: inline;
+    }
+
+    img {
+        display: block;
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+
+    .background-header {
+        padding: 100px 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    
+    .team {
+        width: 100%;
+    }
+
+    .frame {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 10px;
+        
+     }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .team {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+    
+    .heading h2 {
+      font-size: 1.25rem;
+    }
+
+    .frame {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-gap: 5px;
+        
+     }
+}
+
+/* Akhir Responsive */
