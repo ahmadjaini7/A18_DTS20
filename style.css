@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
 html {
     scroll-behavior: smooth;
 }
@@ -431,76 +430,20 @@ footer {
 
 /*#region Ridwan*/
 
-.testimoni {
-    /* margin-top: 10%; */
+.testi-wrapper {
     margin-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 80px;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 15px;
-    background-color: yellowgreen;
+    background-color: #ecf0f1;
     text-align: center;
 }
 
-.testimoni h1 {
-    font-family: 'Allura', cursive;
-    font-size: 52px;
-    margin-bottom: 60px;
-    text-align: center;
-    color: black;
-    padding-bottom: 10px;
-    padding-top: 5px;
-}
-
-.testi-wrapper {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.testi-wrapper .testimonial {
-    background: #fff;
-    margin: 5px;
-    margin-bottom: 50px;
+.testimonial {
     width: 300px;
-    padding: 20px;
-    line-height: 20px;
-    color: #8e8b8b;
-    position: relative;
-}
-
-.testi-wrapper .testimonial h3 {
-    color: #81c644;
-    font-size: 26px;
-    margin-top: 50px;
-}
-
-.testi-wrapper .testimonial p.role {
-    color: #ccc;
-    margin: 12px 0;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-
-.testi-wrapper .testimonial .testi-img {
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: #fff;
-}
-
-.testimoni .testi-wrapper .testimonial .testi-img img {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    padding: 5px;
-    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: .5s;
 }
 
 .testimonial:hover {
@@ -508,5 +451,85 @@ footer {
     box-shadow: 0 5px 20px linear-gradient(to right, aqua, rgb(26, 173, 231));
 }
 
+.testimonial .card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+    background: yellowgreen;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
+}
 
-/*#endregion Ridwan*/
+.testimonial .card .layer {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 99.5%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #08686c, #59ed75);
+    transition: 0.5s;
+}
+
+.testimonial .card:hover .layer {
+    left: 0;
+}
+
+.testimonial .card .content {
+    z-index: 2;
+    position: relative;
+}
+
+.testi-wrapper .testimonial .card .content .image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 10px 40px rgba(223, 172, 7, 0.945);
+    transition: .5s;
+    /* width: 90%;
+    height: 80px;
+    border-radius: 10px; */
+}
+
+.testi-wrapper .testimonial .card .content .image img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.testimonial .card .content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.testimonial:hover .card .content .details h2 {
+    color: white;
+}
+
+.testimonial .card .content .details h2 {
+    font-size: 30px;
+    color: rgb(0, 47, 255);
+    transition: 0.5s;
+}
+
+.testimonial .card .content .details h2 span {
+    font-size: 18px;
+    color: #173ad0;
+    transition: 0.5s;
+}
+
+.testimonial .card:hover .content .details h2 span {
+    color: white;
+    position: relative;
+}
+
+
+/*#endregion */
