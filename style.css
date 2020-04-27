@@ -322,7 +322,7 @@ h1:hover {
 
 footer {
     background-color:yellowgreen;
-    padding:15px 20px;
+    padding:10px 20px;
     margin-top: 20px;
     
   }
@@ -331,7 +331,9 @@ footer {
     font-size: 20px;
     text-align:  center;
     color:#fff;
+    letter-spacing: 10px;
   }
+  
   
   
   
@@ -340,6 +342,7 @@ footer {
     text-align: center;
     color:#fff;
     margin-bottom: 8px;
+    letter-spacing: 20px;
     
     
   }
@@ -350,6 +353,8 @@ footer {
     color:#000000;
     margin: 0 0 -15px 0;
   }
+
+
 
 /* Akhir Bagian WRDN */
 
@@ -396,6 +401,10 @@ footer {
         
      }
 
+     .list {
+        display: none !important;
+    }
+
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
@@ -414,6 +423,16 @@ footer {
         grid-gap: 5px;
         
      }
+}
+
+
+
+/* Akhir Responsive 670px Android */
+
+@media screen and (min-width:700px) {
+.icon {
+    display: none !important;
+}
 }
 
 /* Akhir Responsive */
